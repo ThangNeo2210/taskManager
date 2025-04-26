@@ -36,3 +36,4 @@ async def create_task(task: dict):
 @app.get("/tasks")
 async def list_tasks():
     return await db.fetch_all(tasks_table.select())
+
