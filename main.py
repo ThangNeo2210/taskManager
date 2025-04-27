@@ -37,3 +37,4 @@ async def create_task(task: dict):
 async def list_tasks():
     return await db.fetch_all(tasks_table.select())
 
+print("In Branch")
